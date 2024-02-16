@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DramaTime</title>
+    <title>DramasubBD</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,7 +49,7 @@
 </head>
 <body>
     <header>
-        <h1>DramaTime</h1>
+        <h1>DramasubBD</h1>
     </header>
     <nav>
         <ul>
@@ -57,21 +57,6 @@
             <li><a href="#japanese">Japanese Dramas</a></li>
             <li><a href="#chinese">Chinese Dramas</a></li>
             <li><a href="#movies">Movies</a></li>
-<input type="text" id="search" placeholder="Search dramas...">
-<script>
-    document.getElementById('search').addEventListener('input', function() {
-        var searchQuery = this.value.toLowerCase();
-        var dramas = document.querySelectorAll('.drama');
-        dramas.forEach(function(drama) {
-            var dramaTitle = drama.querySelector('a').textContent.toLowerCase();
-            if (dramaTitle.includes(searchQuery)) {
-                drama.style.display = 'inline-block';
-            } else {
-                drama.style.display = 'none';
-            }
-        });
-    });
-</script>
         </ul>
     </nav>
     <div id="korean">
@@ -148,8 +133,9 @@
     <div class="drama">
         <img src="welcome_to_waikiki.jpg" alt="Welcome to Waikiki">
         <p><a href="welcome_to_waikiki.html">Welcome to Waikiki</a></p>
-    </div>
-<div class="drama">
+    </div> 
+
+    <div class="drama">
         <img src="strong_girl_bong-soon.jpg" alt="Strong Girl Bong-soon">
         <p><a href="strong_girl_bong-soon.html">Strong Girl Bong-soon</a></p>
     </div> 
@@ -166,8 +152,20 @@
 </div> 
 
 <!-- Add other categories (Japanese Dramas, Chinese Dramas, Movies) following a similar structure -->
-    </div>
-    <div id="chinese">
+   <div id="japanese">
+    <div class="drama">
+        <img src="mars_zero_no_kakumei.jpg" alt="Mars: Zero no Kakumei">
+        <p><a href="mars_zero_no_kakumei.html">Mars: Zero no Kakumei</a></p>
+    </div> 
+
+    <div class="drama">
+        <img src="my_love_story_with_my_irresponsible_teacher.jpg" alt="My Love Story With My Irresponsible Teacher">
+        <p><a href="my_love_story_with_my_irresponsible_teacher.html">My Love Story With My Irresponsible Teacher</a></p>
+    </div> 
+
+    <!-- Add more Japanese dramas as needed -->
+</div>
+   <div id="chinese">
     <div class="drama">
         <img src="golden_house_hidden_love.jpg" alt="Golden House Hidden Love">
         <p><a href="golden_house_hidden_love.html">Golden House Hidden Love</a></p>
@@ -194,24 +192,7 @@
     </div> 
 
     <!-- Add more Chinese dramas as needed -->
-</div>
-  <div id="japanese">
-    <div class="drama">
-        <img src="mars_zero_no_kakumei.jpg" alt="Mars: Zero no Kakumei">
-        <p><a href="mars_zero_no_kakumei.html">Mars: Zero no Kakumei</a></p>
-    </div> 
-
-    <div class="drama">
-        <img src="my_love_story_with_my_irresponsible_teacher.jpg" alt="My Love Story With My Irresponsible Teacher">
-        <p><a href="my_love_story_with_my_irresponsible_teacher.html">My Love Story With My Irresponsible Teacher</a></p>
-    </div> 
-
-    <div class="drama">
-        <img src="ao_haru_ride_season_1.jpg" alt="Ao Haru Ride Season 1">
-        <p><a href="ao_haru_ride_season_1.html">Mars: Zero no Kakumei</a></p>
-    </div> 
-</div>
-    <div id="movies">
+<div id="movies">
     <div class="drama">
         <img src="target.jpg" alt="Target (Don't Buy The Seller)">
         <p><a href="target.html">Target (Don't Buy The Seller)</a></p>
